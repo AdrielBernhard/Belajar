@@ -12,7 +12,7 @@ $K = $x;
 $F = $K*3281;
 $M = $K*0.6214;
 
-echo "Feets : $F  ";
+echo "Feets : $F ";
 echo "Miles : $M";
 } else if ($y == "f") {
 $F = $x;
