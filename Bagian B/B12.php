@@ -3,45 +3,50 @@
 <body>
 
 <?php
-  
- $jum = 250;
- $kod = "r";
- 
- if ($kod == "F" || $kod == "f") {
-   if ($jum <= 50 && $jum >= 1){
-     $bayar = $jum * 100;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum <= 100 && $jum >= 51) {
-     $bayar = $jum * 150;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum >= 100){
-     $bayar = $jum * 250;
-     echo "Anda perlu membayar : $bayar Rp";
-   }
- } else if ($kod == "R" || $kod == "r") {
-   if ($jum <= 50 && $jum >= 1){
-     $bayar = $jum * 400;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum <= 100 && $jum >= 51){
-     $bayar = $jum * 700;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum > 100){
-     $bayar = $jum * 1000;
-     echo "Anda perlu membayar : $bayar Rp";
-   }
- } else if ($kod == "N" || $kod == "n") {
-   if ($jum <= 50 && $jum >= 1){
-     $bayar = $jum * 750;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum <= 100 && $jum >= 51){
-     $bayar = $jum * 1000;
-     echo "Anda perlu membayar : $bayar Rp";
-   } else if ($jum >= 100){
-     $bayar = $jum * 1350;
-     echo "Anda perlu membayar : $bayar Rp";
-   }
- }
-  
+$jumlah = 250;
+$kode = "r";
+
+$harga = 0;
+
+switch (strtoupper($kode)) {
+    case 'F':
+        if ($jumlah >= 1 && $jumlah <= 50) {
+            $harga = 100;
+        } elseif ($jumlah <= 100) {
+            $harga = 150;
+        } else {
+            $harga = 250;
+        }
+        break;
+        
+    case 'R':
+        if ($jumlah >= 1 && $jumlah <= 50) {
+            $harga = 400;
+        } elseif ($jumlah <= 100) {
+            $harga = 700;
+        } else {
+            $harga = 1000;
+        }
+        break;
+        
+    case 'N':
+        if ($jumlah >= 1 && $jumlah <= 50) {
+            $harga = 750;
+        } elseif ($jumlah <= 100) {
+            $harga = 1000;
+        } else {
+            $harga = 1350;
+        }
+        break;
+        
+    default:
+        echo "Kode tidak valid";
+        exit;
+}
+
+$total_bayar = $jumlah * $harga;
+
+echo "Anda perlu membayar: $total_bayar Rp";
 ?>
 
 </body>

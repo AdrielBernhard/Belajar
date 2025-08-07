@@ -3,17 +3,17 @@
 <body>
 
 <?php
-
 $x = -10;
 
 if ($x < 0) {
-echo "bilangan ini negatif";
-} else if ($x = 0) {
-echo "bilangan ini nol";
+    $status = "negatif";
+} else if ($x == 0) { 
+    $status = "nol";
 } else {
-echo "bilangan ini positif";
+    $status = "positif";
 }
 
+echo "bilangan ini $status";
 ?>
 
 </body>

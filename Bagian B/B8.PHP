@@ -6,11 +6,19 @@
 $jk = "p";
 $umur = 15;
 
-echo match(strtolower($jk)) {
-    'p' => "karyawan pria yang berumur $umur tahun",
-    'w' => "karyawan wanita yang berumur $umur tahun",
-    default => "Gender tidak dikenali"
-};
+switch (strtolower($jk)) {
+    case 'p':
+        $kategori = "pria";
+        break;
+    case 'w':
+        $kategori = "wanita";
+        break;
+    default:
+        $kategori = null;
+}
+
+echo "Karyawan $kategori berumur $umur tahun"
+
 ?>
 
 </html>

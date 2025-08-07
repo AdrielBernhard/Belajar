@@ -1,19 +1,16 @@
 <?php
-
 $x = 10;
-$num = [0, 1];
-$a = 0;
-$b = 0;
+$prev1 = 0;
+$prev2 = 1;
+$current = 0;
+
+echo "0 1 ";
 
 for ($n = 2; $n <= $x; $n++) {
-  $a = $n - 1;
-  $b = $n - 2;
-  $y = $num[$a] + $num[$b];
-  $num[$n] = $y;
+    $current = $prev1 + $prev2;
+    echo "$current ";
+    
+    $prev1 = $prev2;
+    $prev2 = $current;
 }
-
-foreach ($num as $x) {
-  echo "$x ";
-}
-
 ?>

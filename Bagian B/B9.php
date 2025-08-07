@@ -43,8 +43,8 @@
     }
     $c = $w1 % 100;
     $d = $w2 % 100;
-    $e = 0; //jamnya
-    $f = 0; //menitnya
+    $e = 0;
+    $f = 0;
     
     $g = $a;
     while ($g != $b) {

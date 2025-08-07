@@ -3,30 +3,48 @@
 <body>
 
 <?php
-  
   $s1 = 10;
   $s2 = 6;
   $s3 = 7;
   
-  $num = array($s1, $s2, $s3);
-  rsort($num);
-  
-  $a = $num[0];
-  $b = $num[1];
-  $c = $num[2];
-  
-  $A = $a**2;
-  $B = $b**2;
-  $C = $c**2;
-  
-  if ($a >= $b+$c) {
-    echo "Tidak terbentuk segitiga";
-  } else if ($A == $B+$C) {
-    echo "Sebuah segitiga siku-siku terbentuk";
-  } else if ($A > $B + $C) {
-    echo "Sebuah segitiga tumpul terbentuk";
-  }else if ($a < $B + $C) {
-    echo "Sebuah segitiga lancip terbentuk";
+  // Find the largest side (a)
+  if ($s1 >= $s2 && $s1 >= $s3) {
+    $a = $s1;
+    $b = $s2;
+    $c = $s3;
+  } elseif ($s2 >= $s1 && $s2 >= $s3) {
+    $a = $s2;
+    $b = $s1;
+    $c = $s3;
+  } else {
+    $a = $s3;
+    $b = $s1;
+    $c = $s2;
   }
   
+  // Make sure b is the larger of the remaining two sides
+  if ($b < $c) {
+    $temp = $b;
+    $b = $c;
+    $c = $temp;
+  }
+  
+  $A = $a * $a;
+  $B = $b * $b;
+  $C = $c * $c;
+  
+  if ($a >= $b + $c) {
+    $bentuk = "tidak ada";
+  } elseif ($A == $B + $C) {
+    $bentuk = "Segitiga siku-siku";
+  } elseif ($A > $B + $C) {
+    $bentuk = "Segitiga tumpul";
+  } else {
+    $bentuk = "Segitiga lancip";
+  }
+  
+  echo "Segitiga yang terbentuk adalah $bentuk";
 ?>
+
+</body>
+</html>
