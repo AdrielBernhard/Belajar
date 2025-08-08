@@ -7,23 +7,25 @@ $a = 2;
 $b = 5;
 $c = 3;
 
-$numb = array($a, $b, $c);
-$length = count($numb);
+if ($a > $b) {
+    $temp = $a;
+    $a = $b;
+    $b = $temp;
+}
 
-for ($i = 0; $i < $length; $i++) {
-    for ($j = 0; $j < $length - $i - 1; $j++) {
-        if ($numb[$j] > $numb[$j+1]) {
-            // Tukar posisi
-            $temp = $numb[$j];
-            $numb[$j] = $numb[$j+1];
-            $numb[$j+1] = $temp;
-        }
+if ($b > $c) {
+    $temp = $b;
+    $b = $c;
+    $c = $temp;
+    
+    if ($a > $b) {
+        $temp = $a;
+        $a = $b;
+        $b = $temp;
     }
 }
 
-foreach ($numb as $value) {
-    echo $value . " ";
-}
+echo $a . " " . $b . " " . $c;
 ?>
 
 </body>

@@ -5,88 +5,42 @@
 <?php
 // Proses untuk N=5
 $N = 5;
-$I = 0;
-$proses = 0;
+$proses1 = 0;
+$proses2 = 0;
+$proses3 = 0;
 
-echo "Proses untuk N=5:<br>";
-
-// A (While)
 $I = 0;
-$proses = 0;
 switch ('A') {
     case 'A':
         while ($I >= $N) {
-            $proses++;
+            $proses1++;
             $I++;
         }
         break;
 }
-echo "A: $proses<br>";
 
-// B (Do-While)
 $I = 0;
-$proses = 0;
 switch ('B') {
     case 'B':
         do {
-            $proses++;
+            $proses2++;
             $I++;
         } while ($I >= $N);
         break;
 }
-echo "B: $proses<br>";
 
-// C (For)
-$proses = 0;
 switch ('C') {
     case 'C':
         for ($I = 0; $I >= $N; $I++) {
-            $proses++;
+            $proses3++;
         }
         break;
 }
-echo "C: $proses<br>";
 
-// Proses diatur n=3 kali
-$n = 3;
-echo "<br>Proses diatur 3 kali:<br>";
+echo "A: $proses1<br>";
+echo "B: $proses2<br>";
+echo "C: $proses3<br>";
 
-// A
-$I = 0;
-$proses = 0;
-switch ('A') {
-    case 'A':
-        while ($I < $n) {
-            $proses++;
-            $I++;
-        }
-        break;
-}
-echo "A: $proses<br>";
-
-// B
-$I = 0;
-$proses = 0;
-switch ('B') {
-    case 'B':
-        do {
-            $proses++;
-            $I++;
-        } while ($I < $n);
-        break;
-}
-echo "B: $proses<br>";
-
-// C
-$proses = 0;
-switch ('C') {
-    case 'C':
-        for ($I = 0; $I < $n; $I++) {
-            $proses++;
-        }
-        break;
-}
-echo "C: $proses<br>";
 ?>
 
 </body>
