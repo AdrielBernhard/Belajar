@@ -3,16 +3,16 @@
 <body>
 
 <?php
-$x = 10; 
+    $x = 10; 
 
-$hasil = "";
-if ($x % 2 == 0) {
-    $hasil = "genap";
-} else {
-    $hasil = "ganjil";
-}
+    $hasil = "";
+    if ($x % 2 == 0) {
+        $hasil = "genap";
+    } else {
+        $hasil = "ganjil";
+    }
 
-echo "ini adalah bilangan $hasil"; 
+    echo "ini adalah bilangan $hasil"; 
 ?>
 
 </body>

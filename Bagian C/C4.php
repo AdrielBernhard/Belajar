@@ -1,5 +1,8 @@
-<?php
+<!DOCTYPE html>
+<html>
+<body>
 
+<?php
 // A
 // Flowchart A: 1 kali
 // Flowchart B: 1 kali
@@ -15,3 +18,6 @@
 // Tidak ada yang benar-benar terstruktur. Flowchart D paling mendekati jika diperbaiki.
 
 ?>
+
+</body>
+</html>

@@ -3,20 +3,20 @@
 <body>
 
 <?php
-$a = 0;
-$b = 1;
+    $a = 0;
+    $b = 1;
 
-while ($a <= 1000) {
-    if ($a % 2 == 0) {
-        echo $a . " (GENAP)";
-    } else {
-        echo $a . " (GASAL)";
+    while ($a <= 1000) {
+        if ($a % 2 == 0) {
+            echo $a . " (GENAP)";
+        } else {
+            echo $a . " (GASAL)";
+        }
+
+        $temp = $a + $b;
+        $a = $b;
+        $b = $temp;
     }
-
-    $temp = $a + $b;
-    $a = $b;
-    $b = $temp;
-}
 ?>
 
 </body>

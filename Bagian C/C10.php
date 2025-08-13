@@ -3,12 +3,10 @@
 <body>
 
 <?php
+    $n = 3;
 
-$n = 3;
-
-$awal = $n * ($n - 1) + 1;
+    $awal = $n * ($n - 1) + 1;
     $jumlah = 0;
-
     echo "Deret: ";
     for ($i = 0; $i < $n; $i++) {
         $bilangan = $awal + 2 * $i;
@@ -18,7 +16,6 @@ $awal = $n * ($n - 1) + 1;
     }
 
     echo "\nHasil dari {$n}^3 = $jumlah\n";
-
 ?>
 
 
