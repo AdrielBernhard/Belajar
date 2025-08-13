@@ -8,14 +8,14 @@ $b = 5;
 $c = 3;
 
 if ($a > $b && $a > $c) {
-    $terbesar = "bilangan 1";
+    $terbesar = $a;
 } elseif ($b > $a && $b > $c) {
-    $terbesar = "bilangan 2";
+    $terbesar = $b;
 } else {
-    $terbesar = "bilangan 3";
+    $terbesar = $c;
 }
 
-echo "$terbesar paling besar";
+echo "angka terbesar adalah $terbesar";
 ?>
 
 </body>

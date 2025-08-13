@@ -12,7 +12,6 @@ if ($x % 2 == 0) {
     $hasil = "ganjil";
 }
 
-// --- OUTPUT ---
 echo "ini adalah bilangan $hasil"; 
 ?>
 

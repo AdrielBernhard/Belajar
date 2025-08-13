@@ -3,9 +3,9 @@
 <body>
 
 <?php
-$a = 2; // suku pertama
-$r = 2; // rasio
-$n = 13; // jumlah suku
+$a = 2;
+$r = 2;
+$n = 13;
 $sum = 0;
 
 for ($i = 0; $i < $n; $i++) {

@@ -7,7 +7,6 @@
   $s2 = 6;
   $s3 = 7;
   
-  // Find the largest side (a)
   if ($s1 >= $s2 && $s1 >= $s3) {
     $a = $s1;
     $b = $s2;
@@ -22,7 +21,6 @@
     $c = $s2;
   }
   
-  // Make sure b is the larger of the remaining two sides
   if ($b < $c) {
     $temp = $b;
     $b = $c;
