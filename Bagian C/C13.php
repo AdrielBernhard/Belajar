@@ -49,11 +49,11 @@ if ($nilai_akhir3 < $terendah) {
     $nama_min = $nama3;
 }
 
-echo "$nama1: Nilai Akhir = $nilai_akhir1";
-echo "$nama2: Nilai Akhir = $nilai_akhir2";
-echo "$nama3: Nilai Akhir = $nilai_akhir2" ;
+echo "$nama1: Nilai Akhir = $nilai_akhir1 ";
+echo "$nama2: Nilai Akhir = $nilai_akhir2 ";
+echo "$nama3: Nilai Akhir = $nilai_akhir2 " ;
 
-echo "Rata-rata nilai akhir : $rata_rata";
-echo "Nilai tertinggi: $tertinggi (nama: $nama_max)";
-echo "Nilai terendah: $terendah (nama: $nama_min)";
+echo "Rata-rata nilai akhir : $rata_rata ";
+echo "Nilai tertinggi: $tertinggi (nama: $nama_max) ";
+echo "Nilai terendah: $terendah (nama: $nama_min) ";
 ?>

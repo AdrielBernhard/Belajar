@@ -17,10 +17,10 @@ for ($tahun = 1; $tahun <= $t; $tahun++) {
     $h += $bunga_tahunan;
 }
 
-echo "Hasil Deposito setelah $t tahun:\n";
-echo "Awal: Rp $n";
-echo "Akhir: Rp $h";
-echo "Bunga bersih: $h-$n";
+echo "Hasil Deposito setelah $t tahun: ";
+echo " Awal: Rp $n ";
+echo " Akhir: Rp $h ";
+echo " Bunga bersih: " . $h-$n;
 
 ?>
 

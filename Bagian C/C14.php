@@ -6,7 +6,7 @@
 $start = 1;
 $end = 500;
 
-echo "Bilangan yang mencintai dirinya sendiri antara $start dan $end:\n";
+echo "Bilangan yang mencintai dirinya sendiri antara $start dan $end:";
 
 for ($number = $start; $number <= $end; $number++) {
     $originalNumber = $number;
@@ -20,7 +20,7 @@ for ($number = $start; $number <= $end; $number++) {
     }
     
     if ($sum === $originalNumber) {
-        echo $originalNumber . "\n";
+        echo $originalNumber;
     }
 }
 ?>
