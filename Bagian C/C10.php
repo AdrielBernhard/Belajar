@@ -15,7 +15,7 @@
         $jumlah += $bilangan;
     }
 
-    echo "\nHasil dari {$n}^3 = $jumlah\n";
+    echo "Hasil dari {$n}^3 = $jumlah";
 ?>
 
 

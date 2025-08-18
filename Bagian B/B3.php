@@ -3,9 +3,9 @@
 <body>
 
 <?php
-    $a = 2;
-    $b = 5;
-    $c = 3;
+    $a = 7;
+    $b = 7;
+    $c = 7;
 
     if ($a > $b && $a > $c) {
         $terbesar = $a;
